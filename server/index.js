@@ -89,23 +89,20 @@ async function bootstrap() {
     process.exit(1)
   }
 
-  // 2️⃣ Token检查
+  // 2️⃣ Token 检查
   if (config.bearerToken) {
-    logger.info('[Startup] 已存在 Token')
+    logger.info('[Startup] Token 已配置 (长度: ' + config.bearerToken.length + ')')
   } else {
     logger.warn('[Startup] 未配置 Token，将自动登录获取')
   }
 
-  // 3️⃣ Token 检查（不消耗有效 Token）
-  if (!config.bearerToken) {
-    logger.warn('[Startup] 无 Token，尝试自动登录...')
-    try {
-      const result = await loginWithPhone()
-      if (result.success) logger.info('[Startup] 登录成功')
-      else logger.warn('[Startup] 登录失败:', result.message)
-    } catch (err) {
-      logger.error('[Startup] 登录异常:', err.message)
-    }
+  // ⭐ 启动时自动登录
+  const { refreshToken } = require('./tokenManager')
+  try {
+    await refreshToken()
+    logger.info('[Startup] Token 刷新完成')
+  } catch (err) {
+    logger.error('[Startup] Token 刷新失败:', err.message)
   }
 
   // 4️⃣ 启动定时同步
