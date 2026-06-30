@@ -1,0 +1,115 @@
+[2026-06-27 13:15:20] [[32MINFO[39M] [DB] 开始初始化数据库...
+[2026-06-27 13:15:20] [[32MINFO[39M] [DB] 从文件加载数据库: E:\ClaudeProiects\Charging-analysis Update\data\orders.db
+[2026-06-27 13:15:20] [[32MINFO[39M] [DB] orders 表已存在，列迁移完成
+[2026-06-27 13:15:20] [[32MINFO[39M] [DB] sync_logs 表已存在，跳过
+[2026-06-27 13:15:21] [[32MINFO[39M] [DB] 数据库初始化完成
+[2026-06-27 13:15:21] [[32MINFO[39M] [Startup] Token 已配置 (长度: 1102)
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (128ms)
+[2026-06-27 13:15:21] [[32MINFO[39M] [apiClient] Cookie 已保存
+[2026-06-27 13:15:21] [[32MINFO[39M] [Startup] Token 验证通过
+[2026-06-27 13:15:21] [[32MINFO[39M] [Scheduler] 定时同步启动，间隔 10 秒
+[2026-06-27 13:15:21] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:21] [[32MINFO[39M] ========================================
+[2026-06-27 13:15:21] [[32MINFO[39M]   实时订单数据分析系统已启动
+[2026-06-27 13:15:21] [[32MINFO[39M]   地址: http://localhost:3000
+[2026-06-27 13:15:21] [[32MINFO[39M]   API:  http://localhost:3000/api
+[2026-06-27 13:15:21] [[32MINFO[39M] ========================================
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (41ms)
+[2026-06-27 13:15:21] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (40ms)
+[2026-06-27 13:15:21] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:15:21] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:15:21] [[32MINFO[39M] [Scheduler] 初始同步: 成功 {"newCount":0}
+[2026-06-27 13:15:31] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:15:31] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:15:31] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:31] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (113ms)
+[2026-06-27 13:15:31] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:15:31] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:31] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (45ms)
+[2026-06-27 13:15:31] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:15:31] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:15:31] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:15:41] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:15:41] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:15:41] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:41] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (100ms)
+[2026-06-27 13:15:41] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:15:41] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:41] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (39ms)
+[2026-06-27 13:15:41] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:15:41] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:15:41] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:15:51] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:15:51] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:15:51] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:51] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (112ms)
+[2026-06-27 13:15:51] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:15:51] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:15:51] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (46ms)
+[2026-06-27 13:15:51] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:15:51] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:15:51] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:01] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:01] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:01] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:01] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (101ms)
+[2026-06-27 13:16:01] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:01] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:01] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (43ms)
+[2026-06-27 13:16:01] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:01] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:01] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:11] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:11] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:11] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:11] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (102ms)
+[2026-06-27 13:16:11] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:11] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:11] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (43ms)
+[2026-06-27 13:16:11] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:11] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:11] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:21] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:21] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (100ms)
+[2026-06-27 13:16:21] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (47ms)
+[2026-06-27 13:16:21] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:21] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:21] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:31] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:31] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:31] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:31] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (106ms)
+[2026-06-27 13:16:31] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:31] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:31] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (41ms)
+[2026-06-27 13:16:31] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:31] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:31] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:41] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:41] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:41] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:41] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (100ms)
+[2026-06-27 13:16:41] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:41] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:41] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (40ms)
+[2026-06-27 13:16:41] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:41] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:41] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}
+[2026-06-27 13:16:51] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-27 13:16:51] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-27 13:16:51] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:51] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (105ms)
+[2026-06-27 13:16:51] [[32MINFO[39M] [Sync] 总页数: 1, 从最后一页开始倒序同步
+[2026-06-27 13:16:51] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-27 13:16:51] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (45ms)
+[2026-06-27 13:16:51] [[32MINFO[39M] [Sync] 页 1 无数据，停止
+[2026-06-27 13:16:51] [[32MINFO[39M] [Sync] 完成 {"newCount":0,"totalCount":0}
+[2026-06-27 13:16:51] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {"newCount":0}

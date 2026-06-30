@@ -1,0 +1,374 @@
+[2026-06-24 16:40:00] [[32MINFO[39M] [DB] 开始初始化数据库...
+[2026-06-24 16:40:00] [[32MINFO[39M] [DB] 创建新数据库
+[2026-06-24 16:40:00] [[32MINFO[39M] [DB] orders 表已创建
+[2026-06-24 16:40:00] [[32MINFO[39M] [DB] sync_logs 表已创建
+[2026-06-24 16:40:00] [[32MINFO[39M] [DB] 数据库初始化完成
+[2026-06-24 16:40:00] [[32MINFO[39M] [Startup] Token 已配置 (长度: 1102)
+[2026-06-24 16:40:00] [[32MINFO[39M] [Scheduler] 定时同步启动，间隔 10 秒
+[2026-06-24 16:40:00] [[32MINFO[39M] [Sync] 开始 {"syncLogId":0}
+[2026-06-24 16:40:00] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:00] [[32MINFO[39M] ========================================
+[2026-06-24 16:40:00] [[32MINFO[39M]   实时订单数据分析系统已启动
+[2026-06-24 16:40:00] [[32MINFO[39M]   地址: http://localhost:3000
+[2026-06-24 16:40:00] [[32MINFO[39M]   API:  http://localhost:3000/api
+[2026-06-24 16:40:00] [[32MINFO[39M] ========================================
+[2026-06-24 16:40:02] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1715ms)
+[2026-06-24 16:40:02] [[32MINFO[39M] [apiClient] Cookie 已保存
+[2026-06-24 16:40:02] [[32MINFO[39M] [Sync] 页 1/3559: 获取10条, 新增10条, 累计新增10/10
+[2026-06-24 16:40:02] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:03] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1372ms)
+[2026-06-24 16:40:03] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:03] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:03] [[32MINFO[39M] [Sync] 页 2/3559: 获取10条, 新增0条, 累计新增10/20
+[2026-06-24 16:40:03] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:05] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1368ms)
+[2026-06-24 16:40:05] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:05] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:05] [[32MINFO[39M] [Sync] 页 3/3559: 获取10条, 新增0条, 累计新增10/30
+[2026-06-24 16:40:05] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:06] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1286ms)
+[2026-06-24 16:40:06] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:06] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:06] [[32MINFO[39M] [Sync] 页 4/3559: 获取10条, 新增0条, 累计新增10/40
+[2026-06-24 16:40:06] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:07] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1106ms)
+[2026-06-24 16:40:07] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:07] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:07] [[32MINFO[39M] [Sync] 页 5/3559: 获取10条, 新增0条, 累计新增10/50
+[2026-06-24 16:40:07] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:08] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (967ms)
+[2026-06-24 16:40:08] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:08] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:08] [[32MINFO[39M] [Sync] 页 6/3559: 获取10条, 新增0条, 累计新增10/60
+[2026-06-24 16:40:08] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:09] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1245ms)
+[2026-06-24 16:40:09] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:09] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:09] [[32MINFO[39M] [Sync] 页 7/3559: 获取10条, 新增0条, 累计新增10/70
+[2026-06-24 16:40:09] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:10] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:40:10] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:40:10] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1272ms)
+[2026-06-24 16:40:10] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:10] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:10] [[32MINFO[39M] [Sync] 页 8/3559: 获取10条, 新增0条, 累计新增10/80
+[2026-06-24 16:40:10] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:12] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1181ms)
+[2026-06-24 16:40:12] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:12] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:12] [[32MINFO[39M] [Sync] 页 9/3559: 获取10条, 新增0条, 累计新增10/90
+[2026-06-24 16:40:12] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:13] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1247ms)
+[2026-06-24 16:40:13] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:13] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:13] [[32MINFO[39M] [Sync] 页 10/3559: 获取10条, 新增0条, 累计新增10/100
+[2026-06-24 16:40:13] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:14] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1169ms)
+[2026-06-24 16:40:14] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:14] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:14] [[32MINFO[39M] [Sync] 页 11/3559: 获取10条, 新增0条, 累计新增10/110
+[2026-06-24 16:40:14] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:15] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1071ms)
+[2026-06-24 16:40:15] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:15] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:15] [[32MINFO[39M] [Sync] 页 12/3559: 获取10条, 新增0条, 累计新增10/120
+[2026-06-24 16:40:15] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:16] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1170ms)
+[2026-06-24 16:40:16] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:16] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:16] [[32MINFO[39M] [Sync] 页 13/3559: 获取10条, 新增0条, 累计新增10/130
+[2026-06-24 16:40:16] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:17] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1084ms)
+[2026-06-24 16:40:17] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:17] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:17] [[32MINFO[39M] [Sync] 页 14/3559: 获取10条, 新增0条, 累计新增10/140
+[2026-06-24 16:40:17] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:19] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1152ms)
+[2026-06-24 16:40:19] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:19] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:19] [[32MINFO[39M] [Sync] 页 15/3559: 获取10条, 新增0条, 累计新增10/150
+[2026-06-24 16:40:19] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:20] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1141ms)
+[2026-06-24 16:40:20] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:20] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:20] [[32MINFO[39M] [Sync] 页 16/3559: 获取10条, 新增0条, 累计新增10/160
+[2026-06-24 16:40:20] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:20] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:40:20] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:40:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1152ms)
+[2026-06-24 16:40:21] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:21] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:21] [[32MINFO[39M] [Sync] 页 17/3559: 获取10条, 新增0条, 累计新增10/170
+[2026-06-24 16:40:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:22] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1129ms)
+[2026-06-24 16:40:22] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:22] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:22] [[32MINFO[39M] [Sync] 页 18/3559: 获取10条, 新增0条, 累计新增10/180
+[2026-06-24 16:40:22] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:23] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1136ms)
+[2026-06-24 16:40:23] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:23] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:23] [[32MINFO[39M] [Sync] 页 19/3559: 获取10条, 新增0条, 累计新增10/190
+[2026-06-24 16:40:23] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:24] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1055ms)
+[2026-06-24 16:40:24] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:24] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:24] [[32MINFO[39M] [Sync] 页 20/3559: 获取10条, 新增0条, 累计新增10/200
+[2026-06-24 16:40:24] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:25] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1174ms)
+[2026-06-24 16:40:25] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:25] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:25] [[32MINFO[39M] [Sync] 页 21/3559: 获取10条, 新增0条, 累计新增10/210
+[2026-06-24 16:40:25] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:26] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1152ms)
+[2026-06-24 16:40:26] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:26] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:26] [[32MINFO[39M] [Sync] 页 22/3559: 获取10条, 新增0条, 累计新增10/220
+[2026-06-24 16:40:26] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:28] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1104ms)
+[2026-06-24 16:40:28] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:28] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:28] [[32MINFO[39M] [Sync] 页 23/3559: 获取10条, 新增0条, 累计新增10/230
+[2026-06-24 16:40:28] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:29] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1211ms)
+[2026-06-24 16:40:29] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:29] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:29] [[32MINFO[39M] [Sync] 页 24/3559: 获取10条, 新增0条, 累计新增10/240
+[2026-06-24 16:40:29] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:30] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1176ms)
+[2026-06-24 16:40:30] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:30] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:30] [[32MINFO[39M] [Sync] 页 25/3559: 获取10条, 新增0条, 累计新增10/250
+[2026-06-24 16:40:30] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:30] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:40:30] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:40:31] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1122ms)
+[2026-06-24 16:40:31] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:31] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:31] [[32MINFO[39M] [Sync] 页 26/3559: 获取10条, 新增0条, 累计新增10/260
+[2026-06-24 16:40:31] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:32] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1127ms)
+[2026-06-24 16:40:32] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:32] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:32] [[32MINFO[39M] [Sync] 页 27/3559: 获取10条, 新增0条, 累计新增10/270
+[2026-06-24 16:40:32] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:33] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1144ms)
+[2026-06-24 16:40:33] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:33] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:33] [[32MINFO[39M] [Sync] 页 28/3559: 获取10条, 新增0条, 累计新增10/280
+[2026-06-24 16:40:33] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:35] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1202ms)
+[2026-06-24 16:40:35] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:35] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:35] [[32MINFO[39M] [Sync] 页 29/3559: 获取10条, 新增0条, 累计新增10/290
+[2026-06-24 16:40:35] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:36] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1153ms)
+[2026-06-24 16:40:36] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:36] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:36] [[32MINFO[39M] [Sync] 页 30/3559: 获取10条, 新增0条, 累计新增10/300
+[2026-06-24 16:40:36] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:37] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1255ms)
+[2026-06-24 16:40:37] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:37] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:37] [[32MINFO[39M] [Sync] 页 31/3559: 获取10条, 新增0条, 累计新增10/310
+[2026-06-24 16:40:37] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:38] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1097ms)
+[2026-06-24 16:40:38] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:38] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:38] [[32MINFO[39M] [Sync] 页 32/3559: 获取10条, 新增0条, 累计新增10/320
+[2026-06-24 16:40:38] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:39] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1153ms)
+[2026-06-24 16:40:39] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:39] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:39] [[32MINFO[39M] [Sync] 页 33/3559: 获取10条, 新增0条, 累计新增10/330
+[2026-06-24 16:40:39] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:40] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:40:40] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:40:40] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1127ms)
+[2026-06-24 16:40:40] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:40] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:40] [[32MINFO[39M] [Sync] 页 34/3559: 获取10条, 新增0条, 累计新增10/340
+[2026-06-24 16:40:40] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:42] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1117ms)
+[2026-06-24 16:40:42] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:42] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:42] [[32MINFO[39M] [Sync] 页 35/3559: 获取10条, 新增0条, 累计新增10/350
+[2026-06-24 16:40:42] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:43] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1324ms)
+[2026-06-24 16:40:43] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:43] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:43] [[32MINFO[39M] [Sync] 页 36/3559: 获取10条, 新增0条, 累计新增10/360
+[2026-06-24 16:40:43] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:44] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1284ms)
+[2026-06-24 16:40:44] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:44] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:44] [[32MINFO[39M] [Sync] 页 37/3559: 获取10条, 新增0条, 累计新增10/370
+[2026-06-24 16:40:44] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:45] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1186ms)
+[2026-06-24 16:40:45] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:45] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:45] [[32MINFO[39M] [Sync] 页 38/3559: 获取10条, 新增0条, 累计新增10/380
+[2026-06-24 16:40:45] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:47] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1300ms)
+[2026-06-24 16:40:47] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:47] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:47] [[32MINFO[39M] [Sync] 页 39/3559: 获取10条, 新增0条, 累计新增10/390
+[2026-06-24 16:40:47] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:48] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1141ms)
+[2026-06-24 16:40:48] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:48] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:48] [[32MINFO[39M] [Sync] 页 40/3559: 获取10条, 新增0条, 累计新增10/400
+[2026-06-24 16:40:48] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:49] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1161ms)
+[2026-06-24 16:40:49] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:49] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:49] [[32MINFO[39M] [Sync] 页 41/3559: 获取10条, 新增0条, 累计新增10/410
+[2026-06-24 16:40:49] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:50] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1060ms)
+[2026-06-24 16:40:50] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:50] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:50] [[32MINFO[39M] [Sync] 页 42/3559: 获取10条, 新增0条, 累计新增10/420
+[2026-06-24 16:40:50] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:50] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:40:50] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:40:51] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1218ms)
+[2026-06-24 16:40:51] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:51] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:51] [[32MINFO[39M] [Sync] 页 43/3559: 获取10条, 新增0条, 累计新增10/430
+[2026-06-24 16:40:51] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:52] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1099ms)
+[2026-06-24 16:40:52] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:52] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:52] [[32MINFO[39M] [Sync] 页 44/3559: 获取10条, 新增0条, 累计新增10/440
+[2026-06-24 16:40:52] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:53] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1178ms)
+[2026-06-24 16:40:53] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:53] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:53] [[32MINFO[39M] [Sync] 页 45/3559: 获取10条, 新增0条, 累计新增10/450
+[2026-06-24 16:40:53] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:55] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1141ms)
+[2026-06-24 16:40:55] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:55] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:55] [[32MINFO[39M] [Sync] 页 46/3559: 获取10条, 新增0条, 累计新增10/460
+[2026-06-24 16:40:55] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:56] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1253ms)
+[2026-06-24 16:40:56] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:56] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:56] [[32MINFO[39M] [Sync] 页 47/3559: 获取10条, 新增0条, 累计新增10/470
+[2026-06-24 16:40:56] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:57] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1339ms)
+[2026-06-24 16:40:57] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:57] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:57] [[32MINFO[39M] [Sync] 页 48/3559: 获取10条, 新增0条, 累计新增10/480
+[2026-06-24 16:40:57] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:40:58] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1215ms)
+[2026-06-24 16:40:58] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:40:58] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:40:58] [[32MINFO[39M] [Sync] 页 49/3559: 获取10条, 新增0条, 累计新增10/490
+[2026-06-24 16:40:58] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:00] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1135ms)
+[2026-06-24 16:41:00] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:00] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:00] [[32MINFO[39M] [Sync] 页 50/3559: 获取10条, 新增0条, 累计新增10/500
+[2026-06-24 16:41:00] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:00] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:41:00] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:41:01] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1173ms)
+[2026-06-24 16:41:01] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:01] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:01] [[32MINFO[39M] [Sync] 页 51/3559: 获取10条, 新增0条, 累计新增10/510
+[2026-06-24 16:41:01] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:02] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1117ms)
+[2026-06-24 16:41:02] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:02] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:02] [[32MINFO[39M] [Sync] 页 52/3559: 获取10条, 新增0条, 累计新增10/520
+[2026-06-24 16:41:02] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:03] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1345ms)
+[2026-06-24 16:41:03] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:03] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:03] [[32MINFO[39M] [Sync] 页 53/3559: 获取10条, 新增0条, 累计新增10/530
+[2026-06-24 16:41:03] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:04] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1151ms)
+[2026-06-24 16:41:04] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:04] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:04] [[32MINFO[39M] [Sync] 页 54/3559: 获取10条, 新增0条, 累计新增10/540
+[2026-06-24 16:41:04] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:06] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1251ms)
+[2026-06-24 16:41:06] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:06] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:06] [[32MINFO[39M] [Sync] 页 55/3559: 获取10条, 新增0条, 累计新增10/550
+[2026-06-24 16:41:06] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:07] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1119ms)
+[2026-06-24 16:41:07] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:07] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:07] [[32MINFO[39M] [Sync] 页 56/3559: 获取10条, 新增0条, 累计新增10/560
+[2026-06-24 16:41:07] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:08] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1186ms)
+[2026-06-24 16:41:08] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:08] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:08] [[32MINFO[39M] [Sync] 页 57/3559: 获取10条, 新增0条, 累计新增10/570
+[2026-06-24 16:41:08] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:09] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1355ms)
+[2026-06-24 16:41:09] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:09] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:09] [[32MINFO[39M] [Sync] 页 58/3559: 获取10条, 新增0条, 累计新增10/580
+[2026-06-24 16:41:09] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:10] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:41:10] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:41:11] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1209ms)
+[2026-06-24 16:41:11] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:11] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:11] [[32MINFO[39M] [Sync] 页 59/3559: 获取10条, 新增0条, 累计新增10/590
+[2026-06-24 16:41:11] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:12] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1269ms)
+[2026-06-24 16:41:12] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:12] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:12] [[32MINFO[39M] [Sync] 页 60/3559: 获取10条, 新增0条, 累计新增10/600
+[2026-06-24 16:41:12] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:13] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1146ms)
+[2026-06-24 16:41:13] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:13] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:13] [[32MINFO[39M] [Sync] 页 61/3559: 获取10条, 新增0条, 累计新增10/610
+[2026-06-24 16:41:13] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:14] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1097ms)
+[2026-06-24 16:41:14] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:14] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:14] [[32MINFO[39M] [Sync] 页 62/3559: 获取10条, 新增0条, 累计新增10/620
+[2026-06-24 16:41:14] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:15] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1153ms)
+[2026-06-24 16:41:15] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:15] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:15] [[32MINFO[39M] [Sync] 页 63/3559: 获取10条, 新增0条, 累计新增10/630
+[2026-06-24 16:41:15] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:16] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1127ms)
+[2026-06-24 16:41:16] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:16] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:16] [[32MINFO[39M] [Sync] 页 64/3559: 获取10条, 新增0条, 累计新增10/640
+[2026-06-24 16:41:16] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:18] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1247ms)
+[2026-06-24 16:41:18] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:18] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:18] [[32MINFO[39M] [Sync] 页 65/3559: 获取10条, 新增0条, 累计新增10/650
+[2026-06-24 16:41:18] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:19] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1105ms)
+[2026-06-24 16:41:19] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:19] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:19] [[32MINFO[39M] [Sync] 页 66/3559: 获取10条, 新增0条, 累计新增10/660
+[2026-06-24 16:41:19] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:20] [[32MINFO[39M] [Scheduler] 定时同步触发
+[2026-06-24 16:41:20] [[32MINFO[39M] [Scheduler] 同步完成: 成功 {}
+[2026-06-24 16:41:21] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1870ms)
+[2026-06-24 16:41:21] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:21] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:21] [[32MINFO[39M] [Sync] 页 67/3559: 获取10条, 新增0条, 累计新增10/670
+[2026-06-24 16:41:21] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:22] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1228ms)
+[2026-06-24 16:41:22] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:22] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:22] [[32MINFO[39M] [Sync] 页 68/3559: 获取10条, 新增0条, 累计新增10/680
+[2026-06-24 16:41:22] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit
+[2026-06-24 16:41:23] [[32MINFO[39M] [API] POST /api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit → 200 (1258ms)
+[2026-06-24 16:41:23] [[33MWARN[39M] [DB] 所有 10 条均插入失败。首个错误: UNIQUE constraint failed: orders.order_id
+[2026-06-24 16:41:23] [[32MINFO[39M] [DB] 示例记录: {"order_id":"2026062410011036","station_name":"福建厦门高崎机场1号充电站","operator":"厦门路桥启源绿能科技有限公司","status":"待支付","energy":40.242,"elec_fee":32.89,"service_fee":36.22,"receivable":69.11,"amount":69.11,"created_time":"2026-06-24 16:24:07"}
+[2026-06-24 16:41:23] [[32MINFO[39M] [Sync] 页 69/3559: 获取10条, 新增0条, 累计新增10/690
+[2026-06-24 16:41:23] [[32MINFO[39M] [API] POST https://sms.rhecube.com/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit

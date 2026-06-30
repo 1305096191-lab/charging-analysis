@@ -1,0 +1,22 @@
+{
+  "name": "charging-order-analysis",
+  "version": "1.0.0",
+  "description": "实时订单数据分析系统 — 对接企业充电站后台",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && nodemon index.js",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "node server/index.js",
+    "db:init": "node server/db/init.js",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "render:start": "cd client && npm install && npm run build && cd .. && node server/index.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}

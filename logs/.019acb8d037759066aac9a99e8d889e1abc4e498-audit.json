@@ -1,0 +1,40 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 30
+    },
+    "auditLog": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\.019acb8d037759066aac9a99e8d889e1abc4e498-audit.json",
+    "files": [
+        {
+            "date": 1782291854588,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-24.log",
+            "hash": "6dd200e6a34231e4c155052cd614b4b687b02ae61cccf35e3e39a29ae3ddb8da"
+        },
+        {
+            "date": 1782348128052,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-25.log",
+            "hash": "b41a09c7c511add80ad543bf4c54f989dbbb3863295ef4d93a3c391dccb089ff"
+        },
+        {
+            "date": 1782438942002,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-26.log",
+            "hash": "544b6d8f59449b236315e6a076d17e5d6a123e073509ab30c7746e6d31d88f60"
+        },
+        {
+            "date": 1782536680984,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-27.log",
+            "hash": "d375719e81c1ffca28ee63d48185146d41e1c843b70789e3449a7d579324f567"
+        },
+        {
+            "date": 1782698816585,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-29.log",
+            "hash": "6b690e66b255178596ddcca5ed368f322e9b204d357e962bb7f6a118ea291569"
+        },
+        {
+            "date": 1782824608869,
+            "name": "e:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-30.log",
+            "hash": "644aa1ba27085b9ec51d3c1e1b44d3aabecd65a01a8f918ba9f0d77f4c71fc93"
+        }
+    ],
+    "hashType": "sha256"
+}
