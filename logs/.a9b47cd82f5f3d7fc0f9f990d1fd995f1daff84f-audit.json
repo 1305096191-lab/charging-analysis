@@ -36,9 +36,14 @@
             "hash": "f08d03ec5b197e4ac7ceed32967779c7ba0333d791c36050c09ef676cfde6ba6"
         },
         {
-            "date": 1782791823015,
+            "date": 1782748800428,
             "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-30.log",
-            "hash": "888731f6bc9b11afe547ffe3139d162d2a2d623995e3c57a5271cba30e970695"
+            "hash": "a4219be85f76ccb810e30b775c34ac1a6b84705890e4bb0b62ede06c49ad00fe"
+        },
+        {
+            "date": 1782835205444,
+            "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-07-01.log",
+            "hash": "703f7d7b81472e5668ef575a20695336da3a5e9d1d10fff4b88f5d669c927ce0"
         }
     ],
     "hashType": "sha256"

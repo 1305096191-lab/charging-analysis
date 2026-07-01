@@ -2,7 +2,7 @@
  * Bearer Token 软验证中间件
  * 无 Token 时不报错，仅标记 req.isAuthenticated = false
  */
-const { getToken } = require('../utils/apiClient')
+const { getToken } = require('../tokenManager')
 
 function authMiddleware(req, res, next) {
   // 登录接口无需认证
