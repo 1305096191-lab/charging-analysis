@@ -146,3 +146,7 @@ module.exports = {
   checkTokenStatus,
   getToken: () => config.bearerToken
 }
+console.log('[ENV]', {
+  username: config.username,
+  password: config.password
+})
