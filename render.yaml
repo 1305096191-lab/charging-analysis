@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: charging-analysis
+    env: node
+    buildCommand: npm install && cd client && npm install && npm run build
+    startCommand: node server/index.js
+    envVars:
+      - key: PORT
+        value: 10000
+      - key: API_BASE_URL
+        value: https://sms.rhecube.com
+      - key: PHONE
+        sync: false
+      - key: PASSWORD
+        sync: false
+      - key: PUPPETEER_SKIP_DOWNLOAD
+        value: "true"
