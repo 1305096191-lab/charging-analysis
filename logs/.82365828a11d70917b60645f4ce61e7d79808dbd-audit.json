@@ -39,6 +39,16 @@
             "date": 1782921600332,
             "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\error-2026-07-02.log",
             "hash": "e5560b84e278bfbe0fcabcf3eb2be17081cc06bd93c95b92cc7d619000514212"
+        },
+        {
+            "date": 1783008000180,
+            "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\error-2026-07-03.log",
+            "hash": "c684de5144f8e5d9edbb75215062bfd7752f35d5718b3e163ae555b152b1d1cd"
+        },
+        {
+            "date": 1783307801643,
+            "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\error-2026-07-06.log",
+            "hash": "71d9209658ca607360e5600be2bfaa0a2f4795d4cb86a909f57cdc1ed940fdea"
         }
     ],
     "hashType": "sha256"

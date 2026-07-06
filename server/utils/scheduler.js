@@ -23,22 +23,28 @@ function startScheduler() {
     }
   }, seconds * 1000)
 
-  // Token 刷新 — 每天
-  const DAY_MS = 24 * 60 * 60 * 1000
-  logger.info('[Scheduler] Token 自动刷新已启动（每天）')
+  // 每10分钟：校验Token + 确保数据最新
+  const CHECK_MS = 10 * 60 * 1000
+  logger.info('[Scheduler] 每10分钟校验 Token 和数据')
   tokenInterval = setInterval(async () => {
     try {
-      const { refreshToken } = require('../services/authService')
-      const result = await refreshToken()
-      if (result.success) {
-        logger.info('[Scheduler] Token 已自动刷新')
-      } else {
-        logger.warn('[Scheduler] Token 刷新失败:', result.message)
+      const { ensureToken } = require('../tokenManager')
+      const token = await ensureToken()
+      if (!token) {
+        logger.warn('[Scheduler] Token 无效，触发 Puppeteer 登录...')
+        const { getTokenByBrowser } = require('../services/puppeteerLogin')
+        const result = await getTokenByBrowser()
+        if (result.success) {
+          logger.info('[Scheduler] Puppeteer 登录成功，Token 已更新')
+        }
       }
+      // 触发一次同步
+      const { runSync } = require('../services/syncService')
+      await runSync()
     } catch (err) {
-      logger.error('[Scheduler] Token 刷新异常:', err.message)
+      logger.error('[Scheduler] 10分钟校验异常:', err.message)
     }
-  }, DAY_MS)
+  }, CHECK_MS)
 }
 
 function stopScheduler() {

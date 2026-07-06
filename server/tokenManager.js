@@ -1,90 +1,101 @@
 /**
- * Token Manager — 稳定版（防并发刷新 + 防死循环 + 容错）
+ * Token Manager — 自动管理（Puppeteer 兜底）
  */
-
+const axios = require('axios')
 const { loginWithPhone } = require('./services/authService')
+const { config } = require('./config')
 const { logger } = require('./utils/logger')
 
-let token = null
+let token = config.bearerToken || null
 let expireTime = 0
-
-// ====== 并发控制 ======
 let refreshingPromise = null
 
-// ====== 获取 token ======
-function getToken() {
-  return token
-}
+function getToken() { return token }
 
-// ====== 判断是否过期（提前5分钟刷新） ======
 function isExpired() {
   return !token || Date.now() > expireTime - 5 * 60 * 1000
 }
 
-/**
- * ====== 真正刷新 token ======
- */
-async function refreshToken() {
-  logger.info('[Token] 正在刷新 token...')
-
-  const result = await loginWithPhone()
-
-  if (!result || !result.success) {
-    throw new Error('登录失败，无法获取 token')
-  }
-
-  const newToken = result.token || result.data?.token
-
-  if (!newToken) {
-    throw new Error('登录成功但未返回 token')
-  }
-
-  token = newToken
-
-  // 默认2小时有效（可后续改成解析JWT）
-  expireTime = Date.now() + 2 * 60 * 60 * 1000
-
-  logger.info('[Token] 刷新成功')
-  return token
+async function validateToken(t) {
+  try {
+    const resp = await axios.post(config.apiBaseUrl + config.orderPath,
+      { currentPage: 1, pageSize: 1, orderNoOrPlateNo: '', stationCodeIndex: [], deviceOrgCodeIndex: [], ownerCompanyIdList: [], ownerCompanyIdIndex: [], startTypes: [] },
+      { headers: { 'Content-Type': 'application/json', Authorization: 'Bearer ' + t }, timeout: 10000 }
+    )
+    if (resp.data?.code === 40061) return false
+    return true
+  } catch (err) { return false }
 }
 
-/**
- * ====== 核心：保证单线程刷新（防止并发风暴） ======
- */
-async function ensureToken() {
-  // 如果未过期，直接返回
-  if (!isExpired()) {
+async function refreshToken() {
+  logger.info('[Token] 正在刷新...')
+
+  // 1. 检查 .env Token
+  if (config.bearerToken && config.bearerToken !== token) {
+    if (await validateToken(config.bearerToken)) {
+      token = config.bearerToken
+      expireTime = Date.now() + 2 * 60 * 60 * 1000
+      logger.info('[Token] .env Token 有效')
+      return token
+    }
+  }
+
+  // 2. 尝试 API 自动登录
+  try {
+    const result = await loginWithPhone()
+    if (result?.success && result.token && await validateToken(result.token)) {
+      token = result.token
+      expireTime = Date.now() + 2 * 60 * 60 * 1000
+      logger.info('[Token] API 登录成功')
+      return token
+    }
+  } catch (_) {}
+
+  // 3. ⭐ Puppeteer 模拟浏览器登录
+  try {
+    const { getTokenByBrowser } = require('./services/puppeteerLogin')
+    const browserResult = await getTokenByBrowser()
+    if (browserResult?.success && browserResult.token && await validateToken(browserResult.token)) {
+      token = browserResult.token
+      expireTime = Date.now() + 2 * 60 * 60 * 1000
+      logger.info('[Token] Puppeteer 登录成功')
+      // 持久化到 .env
+      const fs = require('fs'), path = require('path')
+      const envPath = path.resolve(__dirname, '..', '.env')
+      let content = fs.readFileSync(envPath, 'utf-8')
+      content = content.replace(/BEARER_TOKEN=.*/, 'BEARER_TOKEN=' + token)
+      fs.writeFileSync(envPath, content)
+      return token
+    }
+  } catch (err) {
+    logger.warn('[Token] Puppeteer 登录失败:', err.message)
+  }
+
+  // 4. 现有 Token 仍有效
+  if (token && await validateToken(token)) {
+    expireTime = Date.now() + 2 * 60 * 60 * 1000
     return token
   }
 
-  // 如果正在刷新，让所有请求等待同一个 Promise
-  if (refreshingPromise) {
-    return refreshingPromise
-  }
+  // 彻底失败
+  logger.error('[Token] 所有方式均无法获取 Token')
+  token = null; expireTime = 0
+  throw new Error('Token 已过期且无法自动获取')
+}
 
-  // 创建刷新任务
+async function ensureToken() {
+  if (!isExpired()) return token
+  if (refreshingPromise) return refreshingPromise
+
   refreshingPromise = (async () => {
-    try {
-      const newToken = await refreshToken()
-      return newToken
-    } catch (err) {
-      logger.error('[Token] 刷新失败:', err.message)
-
-      // ❗关键：失败后清空token，避免“假可用状态”
-      token = null
-      expireTime = 0
-
+    try { return await refreshToken() }
+    catch (err) {
+      token = null; expireTime = 0
       throw err
-    } finally {
-      refreshingPromise = null
-    }
+    } finally { refreshingPromise = null }
   })()
 
   return refreshingPromise
 }
 
-module.exports = {
-  getToken,
-  ensureToken,
-  refreshToken,
-}
+module.exports = { getToken, ensureToken, refreshToken }

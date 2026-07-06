@@ -20,7 +20,7 @@ router.get('/overview', async (req, res) => {
       dateCondition = "date(created_time)=date('now','localtime')"
     }
 
-    // 汇总（充电+换电合计）
+    // 汇总（仅统计有电量的已完成订单）
     const summary = dbGet(
       `SELECT COUNT(*) as sessions,
               COALESCE(SUM(energy),0) as kwh,
@@ -105,8 +105,7 @@ router.get('/ranking', async (req, res) => {
     const chargeData = dbAll(
       `SELECT station_name as name, COUNT(DISTINCT plate_no) as vehicles,
               COUNT(*) as sessions, COALESCE(SUM(energy),0) as kwh
-       FROM orders WHERE ${cond} AND station_name!='' AND station_name NOT LIKE '%换电站%'
-       GROUP BY station_name`
+       FROM orders WHERE ${cond} AND station_name!='' AND station_name NOT LIKE '%换电站%'       GROUP BY station_name`
     )
     const cmap = {}; chargeData.forEach(r => { cmap[r.name] = r })
     const chargeRank = chargeStations.map(s => cmap[s.name] || { name:s.name,vehicles:0,sessions:0,kwh:0 }).sort((a,b)=>b.kwh-a.kwh)

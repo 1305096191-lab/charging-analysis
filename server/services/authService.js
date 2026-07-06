@@ -73,19 +73,35 @@ async function loginWithPhone(uname, pwd) {
     return { success: false, message: '未配置账号密码', token: null }
   }
 
+  const loginUrl = config.apiBaseUrl + config.loginPath
+
+  // MD5 加密
+  const crypto = require('crypto')
+  const md5 = (str) => crypto.createHash('md5').update(str).digest('hex')
+
+  // ⭐ 优先尝试 MD5 登录（不走 .env 旧 Token）
+  try {
+    logger.info('[Auth] 尝试 MD5 登录...')
+    const resp = await axios.post(loginUrl,
+      { phoneNo: u, password: md5(p), isCipherPassword: true, applicationId: 1000003 },
+      { headers: { 'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0' }, timeout: 15000 }
+    )
+    const t = extractToken(resp.data, resp.headers)
+    if (t) { logger.info('[Auth] ✅ MD5登录成功!'); return { success: true, token: t } }
+    logger.info('[Auth] MD5响应: ' + JSON.stringify(resp.data).slice(0, 200))
+  } catch (e) {
+    logger.info('[Auth] MD5请求失败: ' + e.message)
+  }
+
+  // 兜底：用 .env 中的 Token
   if (config.bearerToken && config.bearerToken.length > 100) {
-    logger.info('[Auth] 使用环境 Token')
+    logger.info('[Auth] 使用 .env Token')
     return { success: true, token: config.bearerToken }
   }
 
-  const loginUrl = config.apiBaseUrl + config.loginPath
-
+  // 其他格式尝试
   const attempts = [
-    { n: 'mainPartId+appId', body: { mainPartId: 1000010164, applicationId: 1000003, phone: u, password: p } },
-    { n: 'phone+password', body: { phone: u, password: p } },
-    { n: 'username+password', body: { username: u, password: p } },
-    { n: 'phone+password+type', body: { phone: u, password: p, type: 1, loginType: 2 } },
-    { n: 'grant_type=password', body: { phone: u, password: p, grant_type: 'password', client_id: 'test' } },
+    { n: 'phoneNo+plain', body: { phoneNo: u, password: p, isCipherPassword: false, applicationId: 1000003 } },
   ]
 
   for (const a of attempts) {

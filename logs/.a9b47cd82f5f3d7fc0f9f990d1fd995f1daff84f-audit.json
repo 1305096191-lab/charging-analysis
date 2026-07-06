@@ -36,19 +36,29 @@
             "hash": "f08d03ec5b197e4ac7ceed32967779c7ba0333d791c36050c09ef676cfde6ba6"
         },
         {
-            "date": 1782748800428,
+            "date": 1782791823015,
             "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-06-30.log",
-            "hash": "a4219be85f76ccb810e30b775c34ac1a6b84705890e4bb0b62ede06c49ad00fe"
+            "hash": "888731f6bc9b11afe547ffe3139d162d2a2d623995e3c57a5271cba30e970695"
         },
         {
-            "date": 1782835205444,
+            "date": 1782878221519,
             "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-07-01.log",
-            "hash": "703f7d7b81472e5668ef575a20695336da3a5e9d1d10fff4b88f5d669c927ce0"
+            "hash": "2d8d407a43d71d5dd5b8ff8397039365d02b15d8055aacfff2434962a2d05360"
         },
         {
-            "date": 1782921609754,
+            "date": 1782964620065,
             "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-07-02.log",
-            "hash": "39315b3cda978c856181defa7b721153efcda5e28aac3b4c5224165b06d97e9b"
+            "hash": "34f4a4e031612d0907339b5acb333df143b4c7a7c5f7cb4c983f6ace2aeadade"
+        },
+        {
+            "date": 1783051018725,
+            "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-07-03.log",
+            "hash": "6e8cff8dc9d65389cf73db676ed5bfdde596452e267714a2fe11112648f34b13"
+        },
+        {
+            "date": 1783307801634,
+            "name": "E:\\ClaudeProiects\\Charging-analysis Update\\logs\\app-2026-07-06.log",
+            "hash": "e41c567fbed7456a6f547dde0d355c4c2ca1f39e6e4e4493dcedf224f6f6427d"
         }
     ],
     "hashType": "sha256"

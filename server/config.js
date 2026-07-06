@@ -12,8 +12,8 @@ const config = {
   loginPath: process.env.LOGIN_PATH || '/api/jupiter-auth-server/login/phone/password',
   orderPath: process.env.ORDER_PATH || '/api/ecube-manage-server/ecube/manage/station/order/get/order/data/permit',
 
-  // 登录凭证（⭐关键）
-  username: process.env.USERNAME?.trim() || '',
+  // 登录凭证（PHONE 避免与 Windows USERNAME 冲突）
+  username: process.env.PHONE?.trim() || process.env.USERNAME?.trim() || '',
   password: process.env.PASSWORD?.trim() || '',
 
   // Bearer Token
